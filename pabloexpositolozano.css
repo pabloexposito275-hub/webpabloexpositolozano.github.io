@@ -1,0 +1,114 @@
+:root {
+    --primary: #0077c7;
+    --primary-dark: #005fa1;
+    --accent: #00b7ff;
+    --bg: #e9eef3;
+    --text: #1f1f1f;
+    --white: #ffffff;
+    --radius: 16px;
+    --shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+    --transition: 0.35s ease;
+}
+
+/* GLOBAL */
+body {
+    margin: 0;
+    font-family: "Poppins", Arial, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.65;
+}
+
+/* HEADER */
+header {
+    background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+    color: var(--white);
+    padding: 4rem 1rem;
+    text-align: center;
+    box-shadow: var(--shadow);
+}
+
+header h1 {
+    font-size: 3.2rem;
+    margin: 0;
+}
+
+/* MAIN */
+main {
+    max-width: 950px;
+    margin: 3rem auto;
+    background: rgba(255, 255, 255, 0.95);
+    padding: 3rem;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+}
+
+/* TITLES */
+h2 {
+    font-size: 2rem;
+    color: var(--primary-dark);
+    margin-bottom: 1rem;
+    position: relative;
+}
+
+h2::after {
+    content: "";
+    width: 55px;
+    height: 4px;
+    background: var(--accent);
+    display: block;
+    border-radius: 4px;
+}
+
+/* LIST */
+ul li {
+    margin: 0.5rem 0;
+}
+
+/* BUTTON */
+.btn {
+    display: inline-block;
+    padding: 0.9rem 1.7rem;
+    background: linear-gradient(135deg, var(--primary), var(--accent));
+    color: white;
+    text-decoration: none;
+    border-radius: var(--radius);
+    font-weight: 600;
+    transition: var(--transition);
+}
+
+.btn:hover {
+    transform: translateY(-4px);
+}
+
+/* TABLE */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1.5rem;
+}
+
+th {
+    background: var(--primary);
+    color: white;
+    padding: 1rem;
+}
+
+td {
+    padding: 1rem;
+    text-align: center;
+}
+
+td img {
+    max-width: 140px;
+    border-radius: var(--radius);
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 2rem;
+    background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+    color: white;
+    margin-top: 3rem;
+}
